@@ -23,7 +23,7 @@
             {
             	"name": "If You Want to See a Whale",
                 "price": 10.56,
-                "image": "whale.jpg",
+                "image": "",
                 "id": 4
             },
             {
@@ -35,7 +35,7 @@
             {
             	"name": "The Story of Fish and Snail",
                 "price": 9.93,
-                "image": "fishandsnail.jpg",
+                "image": "",
                 "id": 6
             },
             {

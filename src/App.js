@@ -25,6 +25,13 @@ class App extends Component {
 
   componentDidMount() {
     this.checkHeights();
+
+    window.onpopstate = function(e) {
+      console.log(window.location.pathname)
+      const path = window.location.pathname;
+      const pathNum = path !== '/' ? path.slice(-1) - 1 : path;
+      this.navClick(pathNum)
+    }.bind(this);
   }
 
   checkHeights() {
@@ -43,8 +50,6 @@ class App extends Component {
     }
   }
 
-
-
   uniqueArray = (arr) => {
     return (
       _.map(
@@ -60,7 +65,7 @@ class App extends Component {
   };
 
   navClick(el) {
-    const prod = el.dataset.products;
+    const prod = (el.dataset && el.dataset.products) || (el === '/' ? 'all' : el);
     let currentProducts;
     let title;
 
