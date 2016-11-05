@@ -1,0 +1,17 @@
+.footer {
+  color: #333333;
+  padding: 20px 0 40px;
+  background-color: ##cccccc;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,1)), to(rgba(0,0,0,0.5)));
+  background: -webkit-linear-gradient(linear, top, bottom, from(rgba(0,0,0,1)),
+  to(rgba(255,255,255,0.5)));
+  background: -moz-linear-gradient(top, #ffffff, #000000);
+  background: -ms-linear-gradient(top, #ffffff, #000000);
+  background: -o-linear-gradient(top, #ffffff, #000000);
+}
+
+.container-full-viewport .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

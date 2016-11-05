@@ -1,0 +1,27 @@
+.flexbox {
+  display: flex;
+}
+
+.sidebar {
+  align-items: stretch;
+  background: #f3f3f3;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.thumbnail {
+  padding: 10px;
+  height: 260px;
+}
+
+.thumbnail:hover {
+  border: 1px solid #0071cf;
+  cursor: pointer;
+}

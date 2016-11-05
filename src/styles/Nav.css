@@ -1,0 +1,28 @@
+.nav-bar {
+  background: #000;
+}
+
+.nav {
+  color: #fff;
+}
+
+.nav-tabs {
+  border: 0;
+}
+
+.nav li {
+  margin-bottom: 0;
+}
+
+.nav li a {
+  color: #fff;
+  border-radius: 0;
+}
+
+.nav li a.active {
+  background: #0071cf;
+}
+
+.nav li a:hover {
+  background: #878787;
+}
