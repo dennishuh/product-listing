@@ -28,7 +28,6 @@ class App extends Component {
     this.checkHeights();
 
     window.onpopstate = function(e) {
-      console.log(window.location.pathname)
       const path = window.location.pathname;
       const pathNum = path !== '/' ? path.slice(-1) - 1 : path;
       this.navClick(pathNum)
