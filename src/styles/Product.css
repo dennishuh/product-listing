@@ -16,6 +16,21 @@
   list-style: none;
 }
 
+.sidebar a.active {
+  position: relative;
+}
+
+.sidebar a.active::before {
+  content: "\A";
+  border-color: transparent #dd4397 transparent transparent;
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid blue;
+}
+
 .thumbnail {
   padding: 10px;
   height: 260px;

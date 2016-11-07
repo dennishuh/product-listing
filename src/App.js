@@ -19,7 +19,8 @@ class App extends Component {
     this.state = {
       allProducts: allProducts,
       currentProducts: allProducts,
-      title: 'All Products'
+      title: 'All Products',
+      orderBy: ''
     }
   }
 
@@ -98,7 +99,8 @@ class App extends Component {
     }
 
     this.setState({
-      currentProducts: sortedArr
+      currentProducts: sortedArr,
+      orderBy
     })
   }
 
@@ -129,7 +131,7 @@ class App extends Component {
 
 
   render() {
-    var childrenWithProps = React.cloneElement(this.props.children, {currentProducts: this.state.currentProducts, title: this.state.title, onSortClick: this.onSortClick});
+    var childrenWithProps = React.cloneElement(this.props.children, {currentProducts: this.state.currentProducts, title: this.state.title, onSortClick: this.onSortClick, orderBy: this.state.orderBy});
     return (
       <div>
         <Header />
